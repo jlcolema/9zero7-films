@@ -1,0 +1,359 @@
+
+/*-------------------------------------------
+	Pre-Footer
+-------------------------------------------*/
+
+
+#pre-footer {
+
+	padding: 50px 0;
+	color: $white;
+	background: $brown url(../img/brown-texture.png);
+
+	@include retina {
+
+		background-image: url(../img/brown-texture_2x.png);
+
+	}
+
+	.wrap {
+
+		@media screen and (min-width: 400px) {
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+
+		}
+
+		@media screen and (min-width: 640px) {
+
+			flex-wrap: nowrap;
+
+		}
+
+	}
+
+		.section {
+
+			h4 {
+
+				margin-top: 0;
+				margin-bottom: (34/24) + em;
+				@include font-size(24);
+				line-height: (34/24) + em;
+				text-transform: none;
+
+				span {}
+
+			}
+
+		}
+
+}
+
+		.learn-more {
+
+			margin: 0 0 30px 0;
+
+			@media screen and (min-width: 400px) {
+
+				width: 48%;
+				width: calc(50% - 16px);
+
+			}
+
+			@media screen and (min-width: 640px) {
+
+				width: 22%;
+				width: calc(25% - 20px);
+				margin: 0;
+
+			}
+
+			@media screen and (min-width: 740px) {
+
+				width: 31%;
+				width: calc(33.33333% - 20px);
+
+			}
+
+			h4 {
+
+				span {}
+
+			}
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+			}
+
+				li {}
+
+					a {
+
+						color: $white;
+
+						&:hover {}
+
+					}
+
+				// Current section...
+
+				.current-menu-item {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+		}
+
+		.connect {
+
+			margin: 0 0 30px 0;
+
+			@media screen and (min-width: 400px) {
+
+				width: 48%;
+				width: calc(50% - 16px);
+
+			}
+
+			@media screen and (min-width: 640px) {
+
+				width: 22%;
+				width: calc(25% - 20px);
+				margin: 0;
+
+			}
+
+			@media screen and (min-width: 740px) {
+
+				width: 31%;
+				width: calc(33.33333% - 20px);
+
+			}
+
+			h4 {
+
+				span {}
+
+			}
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+			}
+
+				li {}
+
+					a {
+
+						color: $white;
+
+						&:hover {}
+
+					}
+
+				// Facebook
+
+				.facebook {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// Google
+
+				.google {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// Instagram
+
+				.instagram {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// Twitter
+
+				.twitter {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// Vimeo
+
+				.vimeo {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// YouTube
+
+				.youtube {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				// RSS
+
+				.rss {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+		}
+
+		.visit-us {
+
+			@media screen and (min-width: 400px) {
+
+				width: 100%;
+
+			}
+
+			@media screen and (min-width: 640px) {
+
+				width: 46%;
+				width: calc(50% - 20px);
+
+			}
+
+			@media screen and (min-width: 740px) {
+
+				width: 31%;
+				width: calc(33.33333% - 20px);
+
+			}
+
+			h4 {
+
+				span {}
+
+			}
+
+			.h-card {}
+
+				.p-adr {
+
+					margin-bottom: (27/18) + em;
+
+					.label {
+
+						display: none;
+
+					}
+
+				}
+
+					.p-street-address {}
+
+					.p-extended-address {}
+
+					.p-locality {}
+
+					.p-postal-code {}
+
+				.get-driving-directions {
+
+					display: none;
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.p-tel {
+
+					margin: 0;
+
+					.label {
+
+						display: none;
+
+					}
+
+					a {
+
+						color: $white;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.u-email {
+
+					margin: 0;
+
+					.label {
+
+						display: none;
+
+					}
+
+					a {
+
+						color: $white;
+
+						&:hover {}
+
+					}
+
+				}
+
+		}

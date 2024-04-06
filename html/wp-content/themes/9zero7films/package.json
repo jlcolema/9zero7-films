@@ -1,0 +1,29 @@
+{
+  "name": "9zero7films",
+  "version": "0.1.0",
+  "description": "A description of the project.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "Joshua Bloom",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-cache": "^0.3.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.8.5",
+    "gulp-livereload": "^3.8.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1"
+  }
+}

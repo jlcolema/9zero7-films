@@ -1,0 +1,103 @@
+
+//-------------------------------------------
+//	Fonts
+//-------------------------------------------
+
+
+// Source Sans Pro (https://typekit.com/fonts/source-sans-pro)
+
+
+// Light
+
+
+@mixin source-sans-pro-light {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+
+}
+
+
+// Light Italic
+
+
+@mixin source-sans-pro-light-italic {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+
+}
+
+
+// Regular
+
+
+@mixin source-sans-pro-regular {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+
+// Italic
+
+
+@mixin source-sans-pro-italic {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+
+}
+
+
+// Semibold
+
+
+@mixin source-sans-pro-semibold {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+
+}
+
+
+// Semibold Italic
+
+
+@mixin source-sans-pro-light-semibold-italic {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+
+}
+
+
+// Bold
+
+
+@mixin source-sans-pro-bold {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+
+// Bold Italic
+
+
+@mixin source-sans-pro-bold-italic {
+
+	font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+
+}

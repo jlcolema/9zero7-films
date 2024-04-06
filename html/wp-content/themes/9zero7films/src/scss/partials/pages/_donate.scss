@@ -1,0 +1,113 @@
+
+/* Donate */
+
+
+.donate-today {
+
+	margin: 40px 0 0 0;
+	// @include font-size(16);
+	// line-height: (25/16) + em;
+	@include source-sans-pro-bold;
+
+	a {
+
+		display: inline-block;
+		height: 40px;
+		padding: 6px 40px 0 40px;
+		color: $white;
+		background: $green;
+		text-decoration: none;
+		border-bottom: 2px solid darken($green, 15%);
+
+		&:hover {
+
+			background: darken($green, 3%);
+
+		}
+
+	}
+
+}
+
+.accepted-cards {
+
+	margin: 35px 0 0 0;
+
+	p {
+
+		@include font-size(16);
+		line-height: (25/16) + em;
+
+		&:first-of-type {
+
+			margin-top: 0;
+
+		}
+
+		&:last-of-type {
+
+			margin-bottom: 10px;
+
+		}
+
+	}
+
+	ul {
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@include group;
+
+	}
+
+		li {
+
+			float: left;
+			width: 36px;
+			height: 24px;
+			margin: 10px 10px 0 0;
+			background: url(../img/credit-cards.svg);
+			background-size: 144px 24px;
+			@include box-shadow(0 1px 0 rgba($black, 0.20));
+			@include hide-text;
+
+			.no-svg & {
+
+				background-image: url(../img/credit-cards.png);
+
+			}
+
+		}
+
+		.visa {}
+
+		.mastercard {
+
+			background-position: -36px 0;
+
+		}
+
+		.american-express {
+
+			background-position: -72px 0;
+
+		}
+
+		.discover {
+
+			background-position: -108px 0;
+
+		}
+
+}
+
+#donate {
+
+	iframe {
+
+		display: block;
+
+	}
+
+}

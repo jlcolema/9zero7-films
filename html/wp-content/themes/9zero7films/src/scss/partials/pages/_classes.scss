@@ -1,0 +1,134 @@
+
+/* Classes */
+
+
+.classes {
+
+	ul {
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+	}
+
+		li {
+
+			padding: 40px 0 50px 0;
+			border-bottom: 1px solid lighten($gray, 50%);
+
+			&:first-of-type {
+
+				padding-top: 0;
+
+			}
+
+			&:last-of-type {
+
+				padding-bottom: 0;
+				border: none;
+
+			}
+
+		}
+
+			h2 {
+
+				margin-top: 0;
+
+				a {
+
+					color: $gray;
+					text-decoration: none;
+
+					&:hover {
+
+						color: $orange;
+
+					}
+
+				}
+
+			}
+
+			.ages {
+
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+				.label {
+
+					@include source-sans-pro-bold;
+					text-transform: uppercase;
+
+				}
+
+			}
+
+			.description {
+
+				p {
+
+					&:first-of-type {}
+
+					&:last-of-type {}
+
+				}
+
+			}
+
+			.time {
+
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+				.label {
+
+					@include source-sans-pro-bold;
+					text-transform: uppercase;
+
+				}
+
+			}
+
+			.schedule {
+
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+				.label {
+
+					@include source-sans-pro-bold;
+					text-transform: uppercase;
+
+				}
+
+			}
+
+			.more {
+
+				margin: 30px 0 0 0;
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+				a {
+
+					display: inline-block;
+					padding: 1px 10px;
+					color: $gray;
+					border: 1px solid $gray;
+					text-decoration: none;
+
+					&:hover {
+
+						color: $white;
+						background: $orange;
+						border-color: $orange;
+
+					}
+
+				}
+
+			}
+
+}

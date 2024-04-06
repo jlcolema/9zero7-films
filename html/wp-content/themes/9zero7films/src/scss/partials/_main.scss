@@ -1,0 +1,95 @@
+
+/*-------------------------------------------
+	Main
+-------------------------------------------*/
+
+
+#main {
+
+	padding: 50px 0;
+
+	.wrap {}
+
+}
+
+		.page-title {
+
+			margin-top: 0;
+
+		}
+
+		.content {}
+
+			.primary {}
+
+			.secondary {}
+
+				.h-card {
+
+					.p-adr {
+
+						margin: 0 0 15px 0;
+
+						.label {
+
+							@include source-sans-pro-bold;
+
+						}
+
+						.p-street-address {}
+
+						.p-extended-address {}
+
+						.p-locality {}
+
+						.p-postal-code {}
+
+					}
+
+					.get-driving-directions {
+
+						margin: 0 0 15px 0;
+
+						a {
+
+							&:hover {}
+
+						}
+
+					}
+
+					.p-tel {
+
+						margin: 0 0 15px 0;
+
+						.label {
+
+							@include source-sans-pro-bold;
+
+						}
+
+						a {
+
+							&:hover {}
+
+						}
+
+					}
+
+					.u-email {
+
+						.label {
+
+							@include source-sans-pro-bold;
+
+						}
+
+						a {
+
+							&:hover {}
+
+						}
+
+					}
+
+				}

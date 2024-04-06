@@ -1,0 +1,279 @@
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+
+	color: $brown;
+	background: $tan url(../img/tan-texture.png);
+	border-top: 10px solid $brown;
+	border-bottom: 1px solid lighten($brown, 50%);
+
+	@include retina {
+
+		background-image: url(../img/tan-texture_2x.png);
+
+	}
+
+	// For pages with a hero image/video...
+
+	#home &,
+	#about &,
+	.single-class & {
+
+		border-bottom: none;
+
+	}
+
+	.wrap {
+
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+	}
+
+}
+
+		/* Logo */
+
+		#logo {
+
+			position: relative;
+			left: -14px;
+			top: 50%;
+			@include hide-text;
+			z-index: 1;
+
+			a {
+
+				display: block;
+				width: 220px;
+				height: 90px;
+				background: url(../img/logo.png);
+
+				@include retina {
+
+					background-image: url(../img/logo_2x.png);
+					background-size: 220px 90px;
+
+				}
+
+				&:hover {}
+
+			}
+
+		}
+
+		/* Navigation */
+
+		#nav {
+
+			@media screen and (min-width: 810px) {
+
+				position: absolute;
+				right: 30px;
+				bottom: 0;
+				z-index: 1;
+
+			}
+
+			.toggle {
+
+				position: absolute;
+				right: 20px;
+				top: 73px;
+				@include hide-text;
+				z-index: 1;
+
+				@media screen and (min-width: 480px) {
+
+					right: 30px;
+
+				}
+
+				@media screen and (min-width: 810px) {
+
+					display: none;
+
+				}
+
+				span {
+
+					display: block;
+					width: 40px;
+					height: 40px;
+					padding: 6px 12px 0 12px;
+					border: 1px solid $brown;
+					background: url(../img/nav-toggle.svg) center center no-repeat;
+					background-size: 40px 40px;
+					cursor: pointer;
+
+					.no-svg & {
+
+						background-image: url(../img/nav-toggle.png);
+
+					}
+
+				}
+
+			}
+
+			ul {
+
+				display: none;
+				margin: 20px 0 0 0;
+				padding: 0;
+				list-style: none;
+				border-top: 1px solid lighten($brown, 50%);
+				@include group;
+
+				@media screen and (min-width: 810px) {
+
+					display: block;
+					margin: 0;
+					border: none;
+
+				}
+
+				// While nav is open on smaller screen views...
+
+				&.open {
+
+					display: block;
+
+					@media screen and (min-width: 810px) {
+
+						display: block;
+
+					}
+
+				}
+
+			}
+
+				li {
+
+					float: left;
+					width: 50%;
+					@include font-size(20);
+					line-height: (25/20) + em;
+					text-align: center;
+					border-bottom: 1px solid lighten($brown, 50%);
+
+					@media screen and (min-width: 810px) {
+
+						width: auto;
+						border: none;
+
+					}
+
+					&:nth-child(odd) {
+
+						border-right: 1px solid lighten($brown, 50%);
+
+						@media screen and (min-width: 810px) {
+
+							border-right: none;
+
+						}
+
+					}
+
+					&:nth-child(even) {}
+
+				}
+
+					a {
+
+						display: block;
+						height: 40px;
+						padding: 8px 0 0 0;
+						color: $brown;
+						text-decoration: none;
+
+						@media screen and (min-width: 810px) {
+
+							height: auto;
+							padding: 45px 15px;
+							border-bottom: 5px solid transparent;
+
+						}
+
+						&:hover {
+
+							@media screen and (min-width: 810px) {
+
+								border-color: lighten($brown, 50%);
+
+							}
+
+						}
+
+					}
+
+				// Current section...
+
+				.current-menu-item,
+				.single-class & #menu-item-87,
+				.single-post & #menu-item-21,
+				.archive & #menu-item-21 {
+
+					a {
+
+						color: $orange;
+
+						@media screen and (min-width: 810px) {
+
+							color: $brown;
+							border-color: $orange;
+
+						}
+
+						&:hover {}
+
+					}
+
+				}
+
+		}
+
+		/* Donate */
+
+		.donate {
+
+			position: absolute;
+			right: 20px;
+			top: -10px;
+			@include font-size(20);
+			line-height: (25/20) + em;
+			@include source-sans-pro-bold;
+			z-index: 1;
+
+			@media screen and (min-width: 480px) {
+
+				right: 30px;
+
+			}
+
+			a {
+
+				display: block;
+				height: 40px;
+				padding: 6px 20px 0 20px;
+				color: $white;
+				background: $green;
+				text-decoration: none;
+				border-bottom: 2px solid darken($green, 15%);
+
+				&:hover {
+
+					background: darken($green, 3%);
+
+				}
+
+			}
+
+		}

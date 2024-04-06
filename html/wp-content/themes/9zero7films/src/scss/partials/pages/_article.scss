@@ -1,0 +1,239 @@
+
+/* Article */
+
+
+.hentry {
+
+	margin: 0 0 50px 0;
+
+	h1 {
+
+		margin-top: 0;
+
+	}
+
+	.matrix-text {}
+
+	.matrix-image {
+
+		img {
+
+			@include box-shadow(5px 5px 0 rgba($black, 0.10));
+
+		}
+
+		// Full width...
+
+		// Float left...
+
+		&.left {
+
+			float: left;
+			margin: 0 30px 30px 0;
+			background: pink;
+
+		}
+
+		// Float right...
+
+		&.right {
+
+			float: right;
+			margin: 0 0 30px 30px;
+
+		}
+
+		// When caption is shown...
+
+		figure {}
+
+			figcaption {
+
+				margin: 25px 0 0 0;
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+			}
+
+				.label {
+
+					@include source-sans-pro-bold;
+
+				}
+
+	}
+
+	.matrix-video {
+
+		iframe {
+
+			display: block;
+			@include box-shadow(5px 5px 0 rgba($black, 0.10));
+
+		}
+
+		// Full width...
+
+		// Float left...
+
+		// Float right...
+
+	}
+
+	.matrix-blockquote {}
+
+	footer {}
+
+		.published-on {
+
+			margin: 0 0 25px 0;
+			@include font-size(16);
+			line-height: (25/16) + em;
+
+			.label {
+
+				display: block;
+				@include source-sans-pro-bold;
+
+			}
+
+		}
+
+		.categories {
+
+			margin: 0 0 25px 0;
+			@include font-size(16);
+			line-height: (25/16) + em;
+
+			.label {
+
+				display: block;
+				@include source-sans-pro-bold;
+
+			}
+
+			a {
+
+				&:hover {}
+
+			}
+
+		}
+
+	.share {
+
+		.label {
+
+			display: block;
+			margin: 0 0 -5px 0;
+			@include font-size(16);
+			line-height: (25/16) + em;
+			@include source-sans-pro-bold;
+
+		}
+
+		ul {
+
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			@include group;
+
+		}
+
+			li {
+
+				float: left;
+				margin: 10px 10px 0 0;
+				@include font-size(16);
+				line-height: (25/16) + em;
+
+				&:last-of-type {
+
+					margin-right: 0;
+
+				}
+
+			}
+
+				a {
+
+					display: inline-block;
+					padding: 1px 10px;
+					color: $gray;
+					border: 1px solid $gray;
+					text-decoration: none;
+
+					&:hover {
+
+						color: $white;
+						background: $orange;
+						border-color: $orange;
+
+					}
+
+				}
+
+			.facebook {
+
+				a {
+
+					&:hover {
+
+						background: $facebook;
+						border-color: $facebook;
+
+					}
+
+				}
+
+			}
+
+			.google {
+
+				a {
+
+					&:hover {
+
+						background: $google;
+						border-color: $google;
+
+					}
+
+				}
+
+			}
+
+			.twitter {
+
+				a {
+
+					&:hover {
+
+						background: $twitter;
+						border-color: $twitter;
+
+					}
+
+				}
+
+			}
+
+			.mail {
+
+				a {
+
+					&:hover {
+
+						background: $gray;
+						border-color: $gray;
+
+					}
+
+				}
+
+			}
+
+	}
+
+}

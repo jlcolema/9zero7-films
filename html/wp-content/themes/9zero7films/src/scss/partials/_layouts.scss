@@ -1,0 +1,65 @@
+
+/*-------------------------------------------
+	Layouts
+-------------------------------------------*/
+
+
+html {}
+
+body {}
+
+	#header {}
+
+	#content {}
+
+		#main {}
+
+			.content {
+
+				@media screen and (min-width: 640px) {
+
+					@include group;
+
+				}
+
+			}
+
+				.primary {
+
+					@media screen and (min-width: 640px) {
+
+						float: left;
+						width: 69%;
+						padding: 0 30px 0 0;
+
+						// Hacks
+
+						#about &,
+						#sponsors &,
+						#donate &,
+						#contact & {
+
+							p:first-child {
+
+								margin-top: 0;
+
+							}
+
+						}
+
+					}
+
+				}
+
+				.secondary {
+
+					@media screen and (min-width: 640px) {
+
+						float: right;
+						width: 31%;
+
+					}
+
+				}
+
+	#footer {}

@@ -1,0 +1,50 @@
+
+/* FAQs */
+
+
+// Questions
+
+.questions {
+
+	ol {
+
+		margin-top: 0;
+
+	}
+
+		li {}
+
+			a {
+
+				color: $gray;
+				text-decoration: none;
+
+				&:hover {
+
+					color: $orange;
+
+				}
+
+			}
+
+}
+
+// Answers
+
+.answers {
+
+	ol {}
+
+		li {}
+
+			h2 {}
+
+			p {
+
+				&:first-of-type {}
+
+				&:last-of-type {}
+
+			}
+
+}
