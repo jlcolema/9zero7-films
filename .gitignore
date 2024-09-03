@@ -1,7 +1,20 @@
 .DS_Store
 *.nova
 *.code-workspace
-node_modules
-package-lock.json
-*.sql
-wp-config*
+organize/*
+
+# Ignore everything in the root except the "wp-content" directory.
+
+html/*
+!html/wp-content/
+
+# Ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory.
+
+html/wp-content/*
+!html/wp-content/themes/
+
+# Ignore specific themes.
+
+html/wp-content/themes/*
+!html/wp-content/themes/9zero7films/
